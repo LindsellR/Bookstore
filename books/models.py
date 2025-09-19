@@ -24,7 +24,11 @@ class Book(models.Model):
     price = models.FloatField(help_text="in US dollars $")
     genre = models.CharField(max_length=12, choices=genre_choices, default="cl")
     book_type = models.CharField(max_length=12, choices=book_type_choices, default="hc")
-    pic = models.ImageField(upload_to='books', default='no_picture.jpg')
+    pic = models.CharField(
+        max_length=255,
+        default='no_picture.jpg',
+        help_text="Filename of the book image stored in static/images/books/"
+    )
 
     def __str__(self):
         return str(self.name)

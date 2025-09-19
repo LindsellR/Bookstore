@@ -3,7 +3,7 @@
 {% block content %}
 <div class="book-detail-container">
     <div class="book-detail-card">
-        <img src="{{ object.pic.url }}" alt="{{ object.name }}" class="book-img-detail">
+        <img src="{% static 'images/'|add:object.pic.name %}" alt="{{ object.name }}" class="book-table-img">
         <div class="book-detail-info">
             <p><b>Title:</b> {{ object.name }}</p>
             <p><b>Author:</b> {{ object.author_name }}</p>
