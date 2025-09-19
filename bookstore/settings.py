@@ -32,7 +32,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     "aqueous-wildwood-32114-af744649b1cf.herokuapp.com", "localhost",
-    ]
+]
 
 
 # Application definition
