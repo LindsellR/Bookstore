@@ -28,10 +28,10 @@ SECRET_KEY = os.environ.get(
 )
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
-    "aqueous-wildwood-32114.herokuapp.com", "localhost",
+    "aqueous-wildwood-32114-af744649b1cf.herokuapp.com", "localhost",
     ]
 
 
