@@ -30,7 +30,9 @@ SECRET_KEY = os.environ.get(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "aqueous-wildwood-32114.herokuapp.com" "localhost",
+]
 
 
 # Application definition
@@ -87,7 +89,7 @@ DATABASES = {
     "default": dj_database_url.config(
         default=f"sqlite:///{BASE_DIR / 'db.sqlite3'}",
         conn_max_age=500,
-        ssl_require=True
+        ssl_require=True,
     )
 }
 
@@ -142,8 +144,3 @@ LOGIN_URL = "/login/"
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-
-
-
-
-
