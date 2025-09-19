@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="home-hero-container">
+    <img src="{% static 'sales/images/bookstore.jpg' %}" alt="Bookstore" class="home-hero-img">
+
+    <!-- Overlay title and button -->
+    <div class="home-hero-overlay">
+        <h1 class="home-hero-title animate-title">Welcome to our Bookstore</h1>
+        <a href="{% url 'login' %}" class="btn-login">Login</a>
+    </div>
+</div>
+{% endblock %}

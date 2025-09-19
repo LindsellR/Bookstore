@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block main_class %}books-main{% endblock %}
+{% block content %}
+<h1 class="page-title">Books List</h1>
+
+<div class="books-table-container">
+  <table class="books-table">
+    <thead>
+      <tr>
+        <th>Book Title</th>
+        <th>Book Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for object in object_list %}
+      <tr>
+        <td class="book-title-cell">
+          <a href="{{ object.get_absolute_url }}" class="book-table-link">{{ object.name }}</a>
+        </td>
+        <td class="book-img-cell">
+          <img src="{{ object.pic.url }}" alt="{{ object.name }}" class="book-table-img">
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+
+{% endblock %}
