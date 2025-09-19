@@ -30,6 +30,15 @@ SECRET_KEY = os.environ.get(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+# Make CSRF and session cookies work over HTTPS
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
+
+# Allow CSRF cookie to be sent to your Heroku host
+CSRF_TRUSTED_ORIGINS = [
+    "https://aqueous-wildwood-32114-af744649b1cf.herokuapp.com"
+]
+
 ALLOWED_HOSTS = [
     "aqueous-wildwood-32114-af744649b1cf.herokuapp.com", "localhost",
 ]
