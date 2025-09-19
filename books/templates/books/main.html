@@ -20,7 +20,7 @@
           <a href="{{ object.get_absolute_url }}" class="book-table-link">{{ object.name }}</a>
         </td>
         <td class="book-img-cell">
-          <img src="{% static 'images/'|add:object.pic.name %}" alt="{{ object.name }}" class="book-table-img">
+          <img src="{% static 'images/books/'|add:object.pic %}" alt="{{ object.name }}" class="book-table-img">class="book-table-img">
         </td>
       </tr>
       {% endfor %}
