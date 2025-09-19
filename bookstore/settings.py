@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get(
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    "aqueous-wildwood-32114.herokuapp.com" "localhost",
+    "aqueous-wildwood-32114.herokuapp.com", "localhost",
 ]
 
 
