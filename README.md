@@ -39,7 +39,7 @@ User login to access the app.
 
 Once logged in users see a list of all books.  
 
-<img src="media/Books_list.jpg" alt="Books List" width="400"/> 
+<img src="media/Book_list.jpg" alt="Books List" width="400"/> 
 
 **Book Detail**
 
