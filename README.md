@@ -23,23 +23,31 @@ A Django web application for managing and viewing books and their sales records.
 ## Screenshots
 
 **Welcome Page**
-Users land on the welcome page where they can access login.
+
+
+Users land on the welcome page where they can access login.  
 <img src="media/Welcome_pg.jpg" alt="Welcome Page" width="400"/>
 
 **Login Page**
-User login to access the app
+
+
+User login to access the app. 
 <img src="media/Login.jpg" alt="Login Page" width="400"/>
 
 **Books List**
-Once logged in users see a list of all books.
+
+
+Once logged in users see a list of all books.  
 <img src="media/Books_list.jpg" alt="Books List" width="400"/> 
 
 **Book Detail**
-Click on a book to view its details.
+
+Click on a book to view its details.  
 <img src="media/Book_details.jpg" alt="Book Details" width="400"
 
 **Sales Records**
-Users can check sales records for a particular book, data visualised in graphs and charts.
+
+Users can check sales records for a particular book, data visualised in graphs and charts.  
 <img src="media/sales_records.jpg" alt="Sales Records" width="400"/>
 
 ---
